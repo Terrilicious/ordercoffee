@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images_3"
+   >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLACE UR ORDER HERE!"
+        android:textColorHint="#CC0066"
+        android:textSize="25dp"
+
+
+        android:textColor="#990066"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnadd"
+        android:layout_alignEnd="@+id/btnadd"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:hint="Enter ur name"
+        android:textColorHint="#990066"
+        android:textColor="#990066"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <CheckBox
+        android:id="@+id/checkboxcappucino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cappucino"
+        android:layout_below="@+id/checkboxwhite"
+        android:layout_alignLeft="@+id/checkboxwhite"
+        android:layout_alignStart="@+id/checkboxwhite"
+        android:onClick="Cappa"/>
+    <CheckBox
+        android:id="@+id/checkboxwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White Coffee"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/txtname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="White"
+        />
+    <CheckBox
+        android:id="@+id/checkboxtea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tea"
+        android:layout_below="@+id/checkboxhotchocolate"
+        android:layout_alignLeft="@+id/checkboxhotchocolate"
+        android:layout_alignStart="@+id/checkboxhotchocolate"
+        android:onClick="Tea"/>
+    <CheckBox
+        android:id="@+id/checkboxhotchocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hot Chocolate"
+        android:layout_below="@+id/checkboxcappucino"
+        android:layout_alignLeft="@+id/checkboxcappucino"
+        android:layout_alignStart="@+id/checkboxcappucino"
+        android:onClick="Choco"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="If other please specify!"
+        android:textColorHint="#990066"
+        android:layout_below="@+id/checkboxtea"
+        android:layout_alignLeft="@+id/checkboxtea"
+        android:layout_alignStart="@+id/checkboxtea" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUANTITY"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/btnsub"
+        android:layout_alignEnd="@+id/btnsub" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="14dp"
+        android:onClick="Decrement"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/txtshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBaseline="@+id/btnsub"
+        android:layout_alignBottom="@+id/btnsub"
+        android:layout_alignRight="@+id/checkboxwhite"
+        android:layout_alignEnd="@+id/checkboxwhite" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtshow"
+        android:layout_alignBottom="@+id/txtshow"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:onClick="Increment"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDER SUMMARY"
+        android:textColor="#cc3366"
+        android:layout_above="@+id/checkboxwhite"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txttotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnsubmit"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginBottom="17dp"
+        android:text="0.00" />
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnsub"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnsub"
+        android:layout_marginBottom="16dp"
+        android:onClick="Submit"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnsubmit"
+        android:layout_alignBottom="@+id/btnsubmit"
+        android:layout_toEndOf="@+id/btnadd"
+        android:layout_toRightOf="@+id/btnadd"
+        android:onClick="Exit"
+        android:text="Exit" />
+
+</RelativeLayout>

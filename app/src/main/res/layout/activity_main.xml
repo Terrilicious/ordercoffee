@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/m">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Welcome to candys coffee shop"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:onClick="Continue"
+        android:text="NEXT" />
+
+
+    <Button
+        android:id="@+id/Btnexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnnext"
+        android:layout_alignBottom="@+id/btnnext"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:onClick="Cancel"
+        android:text="CANCEL" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please press next to continue
+         or cancel to exit"
+        android:textSize="18dp"
+        android:fontFamily="serif"
+        android:textColor="#ff0000"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/Btnexit"
+        android:layout_alignEnd="@+id/Btnexit"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/images_4"
+        android:layout_above="@+id/btnnext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="47dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/images_3"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MMHHHHHHHHHH!!!!!!!!!!!!"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/btnnext"
+        android:layout_alignStart="@+id/btnnext" />
+
+</RelativeLayout>
